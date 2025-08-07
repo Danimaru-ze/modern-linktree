@@ -1,0 +1,65 @@
+{
+    "profile": {
+        "name": "Dany Setiyawan",
+        "bio": "Junior Fullstack Developer passionate about building web apps, exploring clean code, and learning new tech every day.",
+        "image": "http://danimaru.site/storage/anime1.jpg?v=1753416739"
+    },
+    "links": [
+        {
+            "title": "Instagram",
+            "url": "https://instagram.com/_dny.s",
+            "icon": "fab fa-instagram"
+        },
+        {
+            "title": "Website",
+            "url": "https://danimaru.site",
+            "icon": "fas fa-globe"
+        },
+        {
+            "title": "Store",
+            "url": "https://danimaru.site/products",
+            "icon": "fas fa-store"
+        },
+        {
+            "title": "TikTok",
+            "url": "https://tiktok.com/@dnilyou",
+            "icon": "fab fa-tiktok"
+        },
+        {
+            "title": "GitHub",
+            "url": "https://github.com/danimaru-ze",
+            "icon": "fab fa-github"
+        },
+        {
+            "title": "WhatsApp",
+            "url": "https://wa.me/12897188156",
+            "icon": "fab fa-whatsapp"
+        }
+    ],
+    "music": {
+        "title": "Yung Kai",
+        "artist": "Blue",
+        "albumArt": "http://danimaru.site/storage/users/1200x1200bf-60.jpg",
+        "audioFile": "http://danimaru.site/storage/users/yung-kai-blue-official-music-video.mp3", 
+        "duration": 155,
+        "timeSync": [
+            { "time": 19, "text": "your morning eyes I could stare like watching stars" },
+            { "time": 23, "text": "I could walk you by and I'll tell without a thought" },
+            { "time": 32, "text": "would you mind if I took your hand tonight" },
+            { "time": 41, "text": "know you're all that I want and more" },
+            { "time": 47, "text": "I imagine we fell in love on the moonlit skies with you" },
+            { "time": 54, "text": "I think I'll picture us two with the waves, the oceans" },
+            { "time": 58, "text": "colors on your face, I'll leave my heart with your hand" },
+            { "time": 65, "text": "so let me fly with you, will you be forever with me?" },
+            { "time": 107, "text": "My love will always stay by you" },
+            { "time": 112, "text": "I'll keep it safe, so don't you worry a thing" },
+            { "time": 116, "text": "I'll tell you I love you more" },
+            { "time": 122, "text": "It's stuck with you forever, so promise you won't let it go" },
+            { "time": 128, "text": "I'll trust the universe will always bring me to you" },
+            { "time": 136, "text": "I imagine we fell in love on the moonlit skies with you" },
+            { "time": 142, "text": "I think I'll picture us two with the waves, the oceans" },
+            { "time": 146, "text": "colors on your face, I'll leave my heart with your hand" },
+            { "time": 152, "text": "so let me fly with you, will you be forever with me?" }
+        ]
+    }
+}

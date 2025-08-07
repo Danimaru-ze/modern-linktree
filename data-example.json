@@ -1,0 +1,71 @@
+{
+    "profile": {
+        "name": "Your Name",
+        "bio": "Digital creator & content curator. Welcome to my online space where I share my passions and connect with you!",
+        "image": "YOUR_PROFILE_IMAGE_URL_HERE"
+    },
+    "links": [
+        {
+            "title": "Instagram",
+            "url": "https://instagram.com/yourusername",
+            "icon": "fab fa-instagram"
+        },
+        {
+            "title": "Twitter",
+            "url": "https://twitter.com/yourusername",
+            "icon": "fab fa-twitter"
+        },
+        {
+            "title": "YouTube",
+            "url": "https://youtube.com/yourchannel",
+            "icon": "fab fa-youtube"
+        },
+        {
+            "title": "Website",
+            "url": "https://yourwebsite.com",
+            "icon": "fas fa-globe"
+        },
+        {
+            "title": "TikTok",
+            "url": "https://tiktok.com/@yourusername",
+            "icon": "fab fa-tiktok"
+        },
+        {
+            "title": "Pinterest",
+            "url": "https://pinterest.com/yourusername",
+            "icon": "fab fa-pinterest"
+        },
+        {
+            "title": "GitHub",
+            "url": "https://github.com/yourusername",
+            "icon": "fab fa-github"
+        },
+        {
+            "title": "LinkedIn",
+            "url": "https://linkedin.com/in/yourusername",
+            "icon": "fab fa-linkedin"
+        }
+    ],
+    "music": {
+        "title": "Your Song Title",
+        "artist": "Artist Name",
+        "albumArt": "YOUR_ALBUM_ART_URL_HERE",
+        "audioFile": "YOUR_AUDIO_FILE_URL.mp3", 
+        "duration": 180,
+        "timeSync": [
+            { "time": 0, "text": "Intro music..." },
+            { "time": 5, "text": "First verse line 1\nBaris terjemahan" },
+            { "time": 10, "text": "First verse line 2\nBaris terjemahan" },
+            { "time": 15, "text": "First verse line 3\nBaris terjemahan" },
+            { "time": 20, "text": "First verse line 4\nBaris terjemahan" },
+            { "time": 25, "text": "Pre-chorus line 1\nBaris terjemahan" },
+            { "time": 30, "text": "Pre-chorus line 2\nBaris terjemahan" },
+            { "time": 35, "text": "Chorus line 1\nBaris terjemahan" },
+            { "time": 40, "text": "Chorus line 2\nBaris terjemahan" },
+            { "time": 45, "text": "Chorus line 3\nBaris terjemahan" },
+            { "time": 50, "text": "Chorus line 4\nBaris terjemahan" },
+            { "time": 55, "text": "Post-chorus\nBaris terjemahan" },
+            { "time": 60, "text": "Second verse line 1\nBaris terjemahan" }
+        ]
+    }
+}

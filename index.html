@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dany Setiyawan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="welcome-panel" id="welcomePanel">
+        <div class="welcome-content animate__animated animate__fadeIn">
+            <div class="welcome-icon">
+                 <i class="fas fa-hand-sparkles"></i>
+            </div>
+            <h2>Welcome to My Website</h2>
+            <p>Thanks for visiting! Click to get started.</p>
+            <button id="welcomeCloseBtn">Get Started</button>
+        </div>
+    </div>
+
+    <button id="theme-toggle" class="theme-toggle">
+        <i id="theme-icon" class="fas fa-moon"></i>
+    </button>
+    
+    <div class="container initially-hidden" id="mainContainer">
+        <div class="profile">
+            <div class="profile-pic-container">
+                <img src="" alt="Profile Picture" class="profile-pic" id="profilePic">
+            </div>
+            <h1 class="profile-name" id="profileName">Dany Setiyawan</h1>
+            <p class="profile-bio" id="profileBio">Your bio goes here.</p>
+        </div>
+        
+        <div class="links-container" id="linksContainer">
+            </div>
+        
+        <div class="footer" id="footer-content">
+            </div>
+    </div>
+    
+    <div class="music-player" id="musicPlayer">
+        <button class="music-toggle" id="musicToggle"> <i class="fas fa-music"></i> </button>
+        <div class="music-header">
+            <img src="" alt="Album Art" class="album-art" id="albumArt">
+            <div class="music-info">
+                <div class="song-title" id="songTitle">Song Title</div>
+                <div class="artist" id="artist">Artist Name</div>
+                <div class="lyrics-wrapper"> <div class="lyrics-container"> <div class="lyrics" id="lyrics"></div> </div> </div>
+            </div>
+        </div>
+        <div class="music-controls">
+            <button class="play-pause" id="playPauseBtn"> <i class="fas fa-play" id="playPauseIcon"></i> </button>
+            <div class="progress-container"> <div class="progress-bar" id="progressBar"></div> </div>
+            <div class="time-display"> <span id="currentTime">0:00</span> / <span id="totalTime">0:00</span> </div>
+        </div>
+        <audio id="audioPlayer" preload="metadata"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
