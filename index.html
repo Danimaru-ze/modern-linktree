@@ -1,63 +1,96 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dany Setiyawan</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Dany Setiyawan — Personal Bio</title>
+
+  <!-- SEO & PWA-ish -->
+  <meta name="description" content="Link-in-bio Dany Setiyawan — Junior Fullstack Developer.">
+  <meta name="theme-color" content="#0A84FF" id="meta-theme-color">
+  <meta property="og:title" content="Dany Setiyawan — Personal Bio">
+  <meta property="og:description" content="Junior Fullstack Developer passionate about web apps & clean code.">
+  <meta property="og:type" content="website">
+
+  <!-- Perf hints -->
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+  <link rel="preload" href="styles.css" as="style">
+
+  <!-- Icons & Anim -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-Yz+U..." crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="welcome-panel" id="welcomePanel">
-        <div class="welcome-content animate__animated animate__fadeIn">
-            <div class="welcome-icon">
-                 <i class="fas fa-hand-sparkles"></i>
-            </div>
-            <h2>Welcome to My Website</h2>
-            <p>Thanks for visiting! Click to get started.</p>
-            <button id="welcomeCloseBtn">Get Started</button>
-        </div>
-    </div>
+  <!-- subtle animated background -->
+  <div class="bg"></div>
+  <div class="grain"></div>
 
-    <button id="theme-toggle" class="theme-toggle">
-        <i id="theme-icon" class="fas fa-moon"></i>
-    </button>
-    
-    <div class="container initially-hidden" id="mainContainer">
-        <div class="profile">
-            <div class="profile-pic-container">
-                <img src="" alt="Profile Picture" class="profile-pic" id="profilePic">
-            </div>
-            <h1 class="profile-name" id="profileName">Dany Setiyawan</h1>
-            <p class="profile-bio" id="profileBio">Your bio goes here.</p>
-        </div>
-        
-        <div class="links-container" id="linksContainer">
-            </div>
-        
-        <div class="footer" id="footer-content">
-            </div>
+  <!-- Welcome -->
+  <div class="welcome-panel" id="welcomePanel" aria-modal="true" role="dialog" aria-labelledby="welcomeTitle" aria-describedby="welcomeDesc">
+    <div class="welcome-content animate__animated animate__fadeIn">
+      <div class="welcome-icon"><i class="fas fa-hand-sparkles"></i></div>
+      <h2 id="welcomeTitle">Welcome to My Website</h2>
+      <p id="welcomeDesc">Thanks for visiting! Tap to get started.</p>
+      <button id="welcomeCloseBtn" class="btn btn-primary" aria-label="Get started">Get Started</button>
     </div>
-    
-    <div class="music-player" id="musicPlayer">
-        <button class="music-toggle" id="musicToggle"> <i class="fas fa-music"></i> </button>
-        <div class="music-header">
-            <img src="" alt="Album Art" class="album-art" id="albumArt">
-            <div class="music-info">
-                <div class="song-title" id="songTitle">Song Title</div>
-                <div class="artist" id="artist">Artist Name</div>
-                <div class="lyrics-wrapper"> <div class="lyrics-container"> <div class="lyrics" id="lyrics"></div> </div> </div>
-            </div>
-        </div>
-        <div class="music-controls">
-            <button class="play-pause" id="playPauseBtn"> <i class="fas fa-play" id="playPauseIcon"></i> </button>
-            <div class="progress-container"> <div class="progress-bar" id="progressBar"></div> </div>
-            <div class="time-display"> <span id="currentTime">0:00</span> / <span id="totalTime">0:00</span> </div>
-        </div>
-        <audio id="audioPlayer" preload="metadata"></audio>
-    </div>
+  </div>
 
-    <script src="script.js"></script>
+  <!-- Theme toggle -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+    <i id="theme-icon" class="fas fa-moon"></i>
+  </button>
+
+  <!-- Main -->
+  <main class="container initially-hidden" id="mainContainer">
+    <!-- Profile -->
+    <section class="profile card">
+      <div class="profile-pic-ring">
+        <div class="profile-pic-container skeleton">
+          <img src="" alt="Foto profil Dany Setiyawan" class="profile-pic" id="profilePic" loading="eager" decoding="async">
+        </div>
+      </div>
+      <h1 class="profile-name skeleton-text" id="profileName"> </h1>
+      <p class="profile-bio skeleton-text" id="profileBio"> </p>
+    </section>
+
+    <!-- Links -->
+    <section class="links-container" id="linksContainer" aria-label="Quick Links">
+      <!-- link cards injected here -->
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer-content"></footer>
+  </main>
+
+<!-- Music Player -->
+<div class="music-player compact" id="musicPlayer" aria-live="polite">
+  <button class="music-toggle" id="musicToggle" aria-label="Open player">
+    <i class="fas fa-music"></i>
+  </button>
+  <div class="music-header">
+    <img src="" alt="Album art" class="album-art" id="albumArt" loading="lazy" decoding="async">
+    <div class="music-info">
+      <div class="song-title" id="songTitle">Song Title</div>
+      <div class="artist" id="artist">Artist Name</div>
+      <div class="lyrics-wrapper">
+        <div class="lyrics-container">
+          <div class="lyrics" id="lyrics"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="music-controls">
+    <button class="play-pause" id="playPauseBtn" aria-label="Play/Pause"><i class="fas fa-play" id="playPauseIcon"></i></button>
+    <div class="progress-container" aria-label="Seek bar" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+    <div class="time-display"><span id="currentTime">0:00</span> / <span id="totalTime">0:00</span></div>
+  </div>
+  <audio id="audioPlayer" preload="metadata"></audio>
+</div>
+  <script src="script.js" defer></script>
 </body>
 </html>

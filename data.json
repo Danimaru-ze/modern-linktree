@@ -39,8 +39,8 @@
     "music": {
         "title": "Yung Kai",
         "artist": "Blue",
-        "albumArt": "http://danimaru.site/storage/users/1200x1200bf-60.jpg",
-        "audioFile": "http://danimaru.site/storage/users/yung-kai-blue-official-music-video.mp3", 
+        "albumArt": "https://danimaru.site/storage/users/1200x1200bf-60.jpg",
+        "audioFile": "https://danimaru.site/storage/users/yung-kai-blue-official-music-video.mp3", 
         "duration": 155,
         "timeSync": [
             { "time": 19, "text": "your morning eyes I could stare like watching stars" },
